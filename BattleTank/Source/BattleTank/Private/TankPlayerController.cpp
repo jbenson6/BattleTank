@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "TankPlayerController.h"
+#include "Engine.h"
 
 // Tick
 	//Super
@@ -45,7 +46,12 @@ void ATankPlayerController::AimTowardsCrosshair()
 bool ATankPlayerController::GetSightRayHitLocation(FVector& HitLocation) const
 {
 	HitLocation = FVector(1.f);
-	
+	int32 ViewportSizeX, ViewportSizeY;
+	GetViewportSize(ViewportSizeX, ViewportSizeY);
+	auto ScreenLocation = FVector2D(ViewportSizeX*CrossHairXLocation, ViewportSizeY*CrossHairYLocation);
+	UE_LOG(LogTemp, Warning, TEXT("Crosshair Location: %s"), *ScreenLocation.ToString());
+
+
 	return true;
 }
 
