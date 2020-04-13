@@ -27,7 +27,8 @@ private:
 	void AimTowardsCrosshair();
 
 	// Return an OUT parameter, true if hit landscape
-	bool GetSightRayHitLocation(FVector& HitLocation) const;
+	bool GetSightRayHitLocation(FVector& HitLocation);
+	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
 
 	UPROPERTY(EditAnywhere)
 	float CrossHairXLocation = 0.5;
