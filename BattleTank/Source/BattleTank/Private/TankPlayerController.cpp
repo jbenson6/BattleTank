@@ -2,6 +2,7 @@
 
 #include "TankPlayerController.h"
 #include "Engine.h"
+#include "Tank.h"
 
 // Tick
 //Super

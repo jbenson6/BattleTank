@@ -3,6 +3,8 @@
 
 #include "TankAIController.h"
 #include "Engine.h"
+#include "Tank.h"
+
 
 ATank *ATankAIController::GetControlledTank() const
 {
