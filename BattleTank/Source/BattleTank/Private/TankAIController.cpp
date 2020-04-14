@@ -18,7 +18,7 @@ void ATankAIController::BeginPlay()
 	{
 		UE_LOG(LogTemp, Warning, TEXT("AIController not possessing tank"));
 	}
-	UE_LOG(LogTemp, Warning, TEXT("AIController Tank: %s"), *ControlledTank->GetName());
+	//UE_LOG(LogTemp, Warning, TEXT("AIController Tank: %s"), *ControlledTank->GetName());
 
     // Find Player Tank
     auto PlayerTank = FindPlayerControllerTank();
@@ -26,7 +26,7 @@ void ATankAIController::BeginPlay()
     {
         UE_LOG(LogTemp, Warning, TEXT("No PlayerTank Found"));
     }
-    UE_LOG(LogTemp, Warning, TEXT("PlayerTank Found: %s"), *PlayerTank->GetName())
+    //UE_LOG(LogTemp, Warning, TEXT("PlayerTank Found: %s"), *PlayerTank->GetName())
 }
 
 void ATankAIController::Tick(float DeltaTime)
