@@ -4,6 +4,7 @@
 #include "Projectile.h"
 #include "TankAimingComponent.h"
 #include "TankBarrel.h"
+#include "TankMovementComponent.h"
 #include "TankTrack.h"
 #include "TankTurret.h"
 // Sets default values

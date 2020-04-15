@@ -8,6 +8,7 @@
 
 class UTankBarrel;
 class UTankAimingComponent;
+class UTankMovementComponent;
 class UTankTurret;
 class AProjectile;
 class UTankTrack;
@@ -39,6 +40,7 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	UTankAimingComponent *TankAimingComponent = nullptr;
+
 
 private:
 	ATank();
