@@ -17,4 +17,7 @@ class BATTLETANK_API ATankAIController : public AAIController
 
 public:
 	void Tick(float DeltaTime);
+
+private:
+	float AcceptanceRadius = 3000;
 };
