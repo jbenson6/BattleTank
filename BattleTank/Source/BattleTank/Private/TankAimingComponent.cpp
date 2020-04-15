@@ -2,6 +2,7 @@
 
 #include "TankAimingComponent.h"
 #include "TankBarrel.h"
+#include "TankTrack.h"
 #include "TankTurret.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -22,6 +23,16 @@ void UTankAimingComponent::SetBarrelReference(UTankBarrel *BarrelToSet)
 void UTankAimingComponent::SetTurretReference(UTankTurret *TurretToSet)
 {
 	Turret = TurretToSet;
+}
+
+void UTankAimingComponent::SetRightTrackReference(UTankTrack *RightTrackToSet)
+{
+	RightTrack = RightTrackToSet;
+}
+
+void UTankAimingComponent::SetLeftTrackReference(UTankTrack *LeftTrackToSet)
+{
+	LeftTrack = LeftTrackToSet;
 }
 
 void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
